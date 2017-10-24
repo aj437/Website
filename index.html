@@ -6,47 +6,187 @@
 		</TITLE>
 		<style>
 		body {
-			background-color: DodgerBlue;
+			background-color: LightSlateGray;
+			margin: 0;
+		}
+
+		a {
+			color: GhostWhite;
+			text-decoration: none;
+		}
+
+		header {
+			position: relative;
+			height: 1000px;
+			min-height: 200px;
+			width: 100%;
+			background-image: url("http://homepages.rpi.edu/~joweta/images/RPIBackground.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		* {
+    	box-sizing: border-box;
 		}
 
 		h1 {
-			color: white;
+			font-size: 200%;
+
 		}
 
-		h2 {
-			color: white;
-		}
-
-		p {
-			color: white;
-		}
-
-		.container {
+		.welcome {
+			margin: auto;
+			text-shadow: 5px 5px black;
 			position: relative;
+			text-align: center;
+			padding-top: 17%;
+			font-size: 200%;
+			color: white;
 		}
 
-		.center {
-			position: absolute;
-			left: 0;
-			top: 50%;
+		.resumeinfo {
+			font-family: fantasy;
+
+		}
+
+		.column {
+			float: left;
+			padding: 10px;
+			height: 100%;
+			margin 0;
+		}
+
+		.column.side{
+			width: 25%;
+		}
+
+		.column.middle{
+			width: 50%;
+		}
+
+		.row {
 			width: 100%;
-			text-align: center;
+		}
+
+		.row:before,
+		.row:after{
+			content: "";
+			display: table;
+		}
+		.row:after{
+			clear: both;
+		}
+
+		.aboutme {
+			background-color: Crimson;
+			color: FloralWhite;
+			font-size: 100%;
+			line-height: 2.0;
+			font-family: sans-serif;
+			padding-left: 10px;
+			margin-right: auto;
 		}
 
 		</style>
+		<meta name="description" content="A basic website">
+		<meta name="author" content="Andrew Jowett">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="software engineer, computer science, programming, developer, Python, C++, C, RPI, rensselaer polytechnic intitute">
 	</HEAD>
-	<meta name="description" content="A basic website">
-	<meta name="author" content="Andrew Jowett">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<BODY>
-		<div class=container>
-			<div class="center">
-				<H1>Hi! I'm Andrew Jowett</H1>
-				<h2>I'm a computer science major here at RPI<br>
-				Read on to learn more about me!</h2>
-				<P>It's currently under construction right now...<br>
-				Check back later!</P>
+		<header id="home">
+			<div class="row">
+				<div class="welcome">
+					<H1>Hi! I'm Andrew Jowett</H1>
+					<h3>I'm a computer science major here at RPI<br>
+					Read on to learn more about me!</h3>
+				</div>
+			</div>
+		</header>
+
+		<div class="row aboutme" id="about">
+			<div class="column side">
+			</div>
+			<div class="column side">
+			</div>
+			<div class="column middle">
+					<h1>About Me </h1>
+					<p>
+						I wrote my first program many, many years ago during my freshman year of highschool. At the time
+						I enjoyed it somewhat but didn't really get too into it. However my junior year I took an offered
+						computer science cass and suddenly discovered that I had become addicted to programming. That class
+						was the most fun I ever had in highschool and showed me exactly what I wanted to do with my life. A year later I was admitted to <a href="http://rpi.edu">Rensselaer Polytechnic institute</a>
+				 		as a Comp. Sci. major. After my first few semesters here, I have already taken and, currently are taking
+						several fun and interesting classes such as Data Structures and Computer Organization. My interests cover a
+						broad range of topics from machine learning and ai to operating systems and I'm always looking to learn
+						more about all aspects of computer science.
+					</p>
+					<p>
+						On campus, I spend my time doing a number of fun activities: I fence foil with the RPI fencing team,
+						I attend CS club meetings, and I do CS homework! Next semester, I plan on participating in RCOS,
+						the Rensselaer Center for Open Source Software, and working on a bunch of projects there. When I'm
+						not doing work or programming or hanging out with friends, I greatly enjoy skiing. I've been skiing for as long as I can remember,
+						roughly since I was six years old, and it is one of my greatest passions. I'm a member of the RPI Ski
+						and Snowboard club and I go on many ski trips with family and friends. One day I hope to ski on every
+						continent, except maybe antarctica.
+					</p>
+
+					<p>
+						Feel free to check out my resume, it's below and you can also download it, and to contact me at any time! Just email me at
+						<a href="mailto:joweta@rpi.edu?Subject=Website" target="_blank">joweta@rpi.edu</a>
+					</p>
+			</div>
+
+		</div>
+		<div class="row resumeinfo" id="resume">
+			<div class="column side">
+				<h2>Education</h2>
+			</div>
+
+			<div class="column middle">
+				<h3><strong>Rensselaer Polytechnic Institute</strong></h3>
+				<p>
+					<i>Bachelors Computer Science, 3.9/4.0 GPA, Expected May 2019</i><br>
+					Relevant Coursework: Computer Science 1, Data Structures, Foundations of Computer Science,
+					Computer Orgnaization, Multivariable Calculus, Introduction to Differential Equations<br>
+				</p>
 			</div>
 		</div>
+
+		<div class="row resumeinfo">
+			<div class="column side">
+				<h2>Relevant Coursework</h2>
+			</div>
+			<div class="column middle">
+				<h3>Computer Science 1</h3>
+				<p>
+					insert description here
+				</p>
+
+				<h3>Data Structures</h3>
+				<p>
+					insert description here
+				</p>
+
+				<h3>Computer Organization</h3>
+				<p>
+					insert description here
+				</p>
+			</div>
+		</div>
+
+		<div class="row resumeinfo">
+			<div class="column side">
+				<h2>Skills</h2>
+			</div>
+			<div class="column middle">
+				<h4> C++ C, Python, Etc. </h4>
+			</div>
+		</div>
+
+		<div class="contact" id="contact">
+		</div>
+
 	</BODY>
 </HTML>
